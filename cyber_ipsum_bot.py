@@ -11,7 +11,7 @@ import urllib2
 
 
 def main():
-    # Open the corpus indicates in cmd line
+    # Open the corpus indicated in cmd line
     try:
         markov_file = open(sys.argv[1])
     except:
@@ -32,7 +32,7 @@ def main():
 def cyber(message):
 
     # Indicate success on the termial
-    print ("responding successful")
+    print ("response successful")
 
     # Generate Markov text
     global markov_obj
@@ -112,7 +112,7 @@ class Markov(object):
                 i += 1
             else:
                 if TEST == 1:
-                    print ("Error")
+                    print ("I'm still in test mode.")
 
                 possible_next_word = []
                 for i in xrange(len(self.words)):
